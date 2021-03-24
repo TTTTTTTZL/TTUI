@@ -1,12 +1,14 @@
 <template>
-  <Topnav></Topnav>
   <router-view />
 </template>
 
-<script>
-import Topnav from '../src/components/Topnav.vue'
+<script lang="ts">
+import { provide, ref } from 'vue'
 export default {
   name: 'App',
-  components: { Topnav },
+  setup() {
+    const asideVisible = ref(true)
+    provide('xxx', asideVisible)
+  },
 }
 </script>

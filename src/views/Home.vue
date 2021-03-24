@@ -1,4 +1,6 @@
 <template>
+  <Topnav></Topnav>
+
   <div>
     HOME
 
@@ -7,7 +9,11 @@
 </template>
 
 <script>
-export default {}
+import Topnav from '../components/Topnav.vue'
+
+export default {
+  components: { Topnav },
+}
 </script>
 
 <style lang="scss" scoped></style>

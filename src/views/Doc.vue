@@ -1,6 +1,7 @@
 <template>
+  <Topnav></Topnav>
   <div class="container">
-    <aside>
+    <aside v-show="asideVisible">
       <h2>组件列表</h2>
       <ol>
         <li>
@@ -22,7 +23,16 @@
 </template>
 
 <script>
-export default {}
+import { inject } from 'vue'
+import Topnav from '../components/Topnav.vue'
+
+export default {
+  components: { Topnav },
+  setup() {
+    const asideVisible = inject('xxx')
+    return { asideVisible }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
