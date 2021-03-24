@@ -16,6 +16,8 @@
   height: 80px;
   background: pink;
   align-items: center;
+  position: relative;
+  z-index: 1;
   .left-item {
     flex: 1;
   }
