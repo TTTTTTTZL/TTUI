@@ -1,15 +1,12 @@
 <template>
-  <div>
-    hi |<router-link to="/">Frank</router-link>|<router-link to="xxx"
-      >Frank2</router-link
-    >
-  </div>
+  <Topnav></Topnav>
   <router-view />
 </template>
 
 <script>
+import Topnav from '../src/components/Topnav.vue'
 export default {
   name: 'App',
-  components: {},
+  components: { Topnav },
 }
 </script>
