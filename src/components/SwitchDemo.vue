@@ -1,5 +1,5 @@
 <template>
-  <Switch :value="x" @input="x = $event" />
+  <Switch v-model:value="value" />
 </template>
 
 <script>
@@ -11,9 +11,9 @@ export default {
     Switch,
   },
   setup() {
-    const x = ref(false)
+    const value = ref(false)
     return {
-      x,
+      value,
     }
   },
 }
