@@ -31,7 +31,6 @@ export default {
   },
   setup(props) {
     const { theme, size, level } = props
-    console.log([`TT-theme-${theme}`])
     const classes = computed(() => {
       return {
         [`TT-theme-${theme}`]: theme,
@@ -39,7 +38,6 @@ export default {
         [`TT-level-${level}`]: level,
       }
     })
-    console.log(classes)
     return { classes }
   },
 }
