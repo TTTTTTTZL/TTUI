@@ -6,6 +6,17 @@
         <h2>组件列表</h2>
         <ol>
           <li>
+            <router-link to="/doc/intro">介绍</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/install">安装</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/get-started">开始使用</router-link>
+          </li>
+        </ol>
+        <ol>
+          <li>
             <router-link to="/doc/switch">Switch 组件</router-link>
           </li>
           <li>
@@ -50,7 +61,7 @@ export default {
   }
   > .content {
     flex-grow: 1;
-    // padding-top: 60px;
+    padding-top: 60px;
     padding-left: 156px;
     @media (max-width: 500px) {
       padding-left: 0;
@@ -65,7 +76,7 @@ export default {
   > main {
     flex-grow: 1;
     padding: 16px;
-    background: lightgreen;
+    background: white;
   }
 }
 aside {
