@@ -13,14 +13,14 @@ export default {
       globals: {
         vue: 'Vue',
       },
-      name: 'Gulu',
-      file: 'dist/lib/gulu.js',
+      name: 'TT',
+      file: 'dist/lib/TT.js',
       format: 'umd',
       plugins: [terser()],
     },
     {
-      name: 'Gulu',
-      file: 'dist/lib/gulu.esm.js',
+      name: 'TT',
+      file: 'dist/lib/TT.esm.js',
       format: 'es',
       plugins: [terser()],
     },
