@@ -4,8 +4,8 @@ import fs from 'fs'
 import { baseParse } from '@vue/compiler-core'
 
 export default {
-  base: './',
-  assetsDir: 'assets',
+  base: './', //相对路径访问静态资源
+  assetsDir: 'assets', //覆盖之前的_assets 导致github的bug
   plugins: [md()],
   vueCustomBlockTransforms: {
     demo: (options) => {
