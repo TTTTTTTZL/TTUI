@@ -18,7 +18,7 @@
             <use xlink:href="#icon-vue"></use>
           </svg>
           <h3>基于 Vue 3</h3>
-          <p>骄傲地使用了 Vue 3 Composition API</p>
+          <p>使用了 Vue 3 Composition API</p>
         </li>
         <li>
           <svg>
@@ -32,7 +32,7 @@
             <use xlink:href="#icon-light"></use>
           </svg>
           <h3>代码易读</h3>
-          <p>每个组件的源代码都极其简洁</p>
+          <p>尽可能精简的编写组件</p>
         </li>
       </ul>
     </div>
@@ -50,12 +50,14 @@ export default {
 <style lang="scss" scoped>
 $green: #02bcb0;
 $border-radius: 4px;
-$color: #007974;
+$color: #3bc3b8;
 .topnavAndBanner {
+  background: rgb(225, 248, 238);
   background: linear-gradient(
-    145deg,
-    rgba(227, 255, 253, 1) 0%,
-    rgba(183, 233, 230, 1) 100%
+    180deg,
+    rgba(225, 248, 238, 1) 0%,
+    rgba(247, 251, 237, 1) 40%,
+    rgba(227, 248, 239, 1) 100%
   );
   clip-path: ellipse(80% 60% at 50% 40%);
 }

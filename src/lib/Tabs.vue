@@ -81,7 +81,7 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
-$blue: #40a9ff;
+$blue: #e26956;
 $color: #333;
 $border-color: #d9d9d9;
 .TT-tabs {

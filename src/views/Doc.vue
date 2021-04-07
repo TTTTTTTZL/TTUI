@@ -81,7 +81,7 @@ $aside-index: 10;
   }
 }
 aside {
-  background: lightblue;
+  background: #e2f8ec;
   width: 150px;
   padding: 16px 0;
   position: fixed;
@@ -102,7 +102,8 @@ aside {
         text-decoration: none;
       }
       .router-link-active {
-        background: white;
+        background: #29aeb3;
+        color: #f8fef6;
       }
     }
   }

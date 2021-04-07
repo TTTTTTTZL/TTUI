@@ -5,7 +5,7 @@
 然后在你的代码中写入下面的代码
 
 ```
-import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "TT-ui"
+import { Button, Tabs, Tab, Switch, Dialog, openDialog } from "tt-ui"
 ```
 
 就可以使用我提供的组件了。
@@ -21,9 +21,9 @@ import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "TT-ui"
   </div>
 </template>
 <script>
-import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "TT-ui"
+import { Button, Tabs, Tab, Switch, Dialog, openDialog } from "tt-ui"
 export default {
-  components: {Button}
+  components: { Button }
 }
 </script>
 ```

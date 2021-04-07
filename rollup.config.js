@@ -1,9 +1,9 @@
-// 请先安装 rollup-plugin-esbuild rollup-plugin-vue rollup-plugin-scss sass rollup-plugin-terser
-import esbuild from 'rollup-plugin-esbuild'
-import vue from 'rollup-plugin-vue'
-import scss from 'rollup-plugin-scss'
-import dartSass from 'sass'
-import { terser } from 'rollup-plugin-terser'
+// 安装 rollup-plugin-esbuild rollup-plugin-vue rollup-plugin-scss sass rollup-plugin-terser
+import esbuild from 'rollup-plugin-esbuild' // 把TS 编译成JS
+import vue from 'rollup-plugin-vue' //把 Vue 结尾的文件编译成 JS
+import scss from 'rollup-plugin-scss' //把 Scss 结尾的编译成 CSS
+import dartSass from 'sass' // 用来支持 rollup-plugin-scss
+import { terser } from 'rollup-plugin-terser' // 混淆JS 代码
 
 export default {
   input: 'src/lib/index.ts',
