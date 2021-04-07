@@ -2,34 +2,36 @@
   <div class="layout">
     <Topnav toggleMenuButtonVisible class="nav" />
     <div class="content">
-      <aside v-if="menuVisible">
-        <h2>组件列表</h2>
-        <ol>
-          <li>
-            <router-link to="/doc/intro">介绍</router-link>
-          </li>
-          <li>
-            <router-link to="/doc/install">安装</router-link>
-          </li>
-          <li>
-            <router-link to="/doc/get-started">开始使用</router-link>
-          </li>
-        </ol>
-        <ol>
-          <li>
-            <router-link to="/doc/switch">Switch 组件</router-link>
-          </li>
-          <li>
-            <router-link to="/doc/button">Button 组件</router-link>
-          </li>
-          <li>
-            <router-link to="/doc/dialog">Dialog 组件</router-link>
-          </li>
-          <li>
-            <router-link to="/doc/tabs">Tabs 组件</router-link>
-          </li>
-        </ol>
-      </aside>
+      <transition name="fade">
+        <aside v-if="menuVisible">
+          <h2>组件列表</h2>
+          <ol>
+            <li>
+              <router-link to="/doc/intro">介绍</router-link>
+            </li>
+            <li>
+              <router-link to="/doc/install">安装</router-link>
+            </li>
+            <li>
+              <router-link to="/doc/get-started">开始使用</router-link>
+            </li>
+          </ol>
+          <ol>
+            <li>
+              <router-link to="/doc/switch">Switch 组件</router-link>
+            </li>
+            <li>
+              <router-link to="/doc/button">Button 组件</router-link>
+            </li>
+            <li>
+              <router-link to="/doc/dialog">Dialog 组件</router-link>
+            </li>
+            <li>
+              <router-link to="/doc/tabs">Tabs 组件</router-link>
+            </li>
+          </ol>
+        </aside>
+      </transition>
       <main>
         <router-view />
       </main>
@@ -110,5 +112,14 @@ aside {
 }
 main {
   overflow: auto;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: left 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  left: -150px;
 }
 </style>
