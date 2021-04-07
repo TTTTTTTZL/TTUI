@@ -3,13 +3,13 @@
 打开终端运行下列命令：
 
 ```
-npm install tt-ui
+npm install ttt-ui
 ```
 
 或
 
 ```
-yarn add tt-ui
+yarn add ttt-ui
 ```
 
 下一节：[开始使用](#/doc/get-started)

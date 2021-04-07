@@ -6,14 +6,15 @@ import dartSass from 'sass' // 用来支持 rollup-plugin-scss
 import { terser } from 'rollup-plugin-terser' // 混淆JS 代码
 
 export default {
-  input: 'src/lib/index.ts',
+  input: 'src/lib/index.ts', //输入
+  //输出
   output: [
     {
       globals: {
-        vue: 'Vue',
+        vue: 'Vue', // 使用了外部依赖vue
       },
-      name: 'TT',
-      file: 'dist/lib/TT.js',
+      name: 'TT', // 仓库名称,并且会以此name 当作全局变量的名称
+      file: 'dist/lib/TT.js', //需要生成的(js) 文件
       format: 'umd',
       plugins: [terser()],
     },
