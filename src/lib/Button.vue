@@ -5,7 +5,7 @@
   </button>
 </template>
 <script lang="ts">
-import { computed } from 'vue'
+import { computed, onMounted, onUnmounted, onUpdated } from 'vue'
 export default {
   props: {
     theme: {
@@ -31,6 +31,15 @@ export default {
   },
   setup(props) {
     const { theme, size, level } = props
+    onMounted(() => {
+      console.log('mounted!')
+    })
+    onUpdated(() => {
+      console.log('updated!')
+    })
+    onUnmounted(() => {
+      console.log('unmounted!')
+    })
     const classes = computed(() => {
       return {
         [`TT-theme-${theme}`]: theme,
